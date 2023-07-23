@@ -6,6 +6,7 @@
 */
 Console.Write("Введите трехзначное число: ");
 int a = Convert.ToInt32(Console.ReadLine());
-int i = a/10;
-int a2 = i % 10;
-Console.WriteLine(a2);
+if(a < 100 || a > 1000)
+    Console.WriteLine("неверное число");
+else
+    Console.WriteLine(a/10%10);
